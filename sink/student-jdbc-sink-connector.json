@@ -1,10 +1,10 @@
 {
-  "name": "payment-details-jdbc-connector-v1",
+  "name": "student-jdbc-connector",
   "config": {
 
     "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
     "task.max": "1",
-    "topics": "money-transfer-data-v1",
+    "topics": "student-jdbc-connector",
 
     "key.converter": "io.confluent.connect.avro.AvroConverter",
     "value.converter": "io.confluent.connect.avro.AvroConverter",

@@ -1,5 +1,5 @@
 {
-    "name":"money-transfer-data-jdbc-source-connector-v1",
+    "name":"student-data-jdbc-source-connector",
     "config":{
         "connector.class":"io.confluent.connect.jdbc.JdbcSourceConnector",
         "task.max":"1",
