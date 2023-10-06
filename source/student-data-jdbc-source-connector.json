@@ -9,7 +9,7 @@
       "transforms.createKey.fields": "student_id",
       "transforms.setSchema.type": "org.apache.kafka.connect.transforms.SetSchemaMetadata$Value",
       "transforms.setSchema.schema.name": "StudentsRecords",
-      "connection.url": "jdbc:mysql://db4free.net:3306/kafkaconnect",
+      "connection.url": "jdbc:mysql://localhost:3306/database_1",
       "connection.password": "root",
       "mode": "timestamp+incrementing",
       "incrementing.column.name": "student_id",
