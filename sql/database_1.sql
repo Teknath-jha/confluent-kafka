@@ -50,3 +50,26 @@ INSERT INTO students (
     ('Sneha', 'Patel', '1999-04-30', 'Female', 'sneha.p@dummy.com', '555-987-1234', 'Chemistry', 'Science', 2018, '345 Redwood Ave', 'Apt 6F', 'Rivertown', 'FL', '78901', 'USA'),
     ('Vikram', 'Singh', '1998-08-02', 'Male', 'vikram.s@dummy.com', '777-222-3333', 'Civil Engineering', 'Engineering', 2017, '789 Oakwood Rd', NULL, 'Valley City', 'NC', '12345', 'USA'),
     ('Neha', 'Gupta', '1996-10-14', 'Female', 'neha.g@dummy.com', '888-666-9999', 'English Literature', 'Humanities', 2021, '456 Elmwood St', 'Suite 7G', 'Pleasantville', 'IL', '67890', 'USA');
+
+
+
+
+
+INSERT INTO 'students' (
+    'first_name',
+    'last_name',
+    'date_of_birth',
+    'gender',
+    'email',
+    'phone_number',
+    'course_name',
+    'department',
+    'enrollment_year',
+    'address_line1',
+    'address_line2',
+    'city',
+    'state',
+    'zip_code',
+    'country'
+) VALUES
+    ('Teknath', 'Jha', '1995-05-15', 'Male', 'john.doe@dummy.com', '123-456-7890', 'Computer Science', 'Science', 2021, '123 Main St', 'Apt 4B', 'Anytown', 'CA', '12345', 'USA'),

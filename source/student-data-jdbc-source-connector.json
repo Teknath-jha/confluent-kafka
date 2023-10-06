@@ -1,36 +1,30 @@
 {
-    "name":"student-data-jdbc-source-connector",
-    "config":{
-        "connector.class":"io.confluent.connect.jdbc.JdbcSourceConnector",
-        "task.max":"1",
-
-        "key.converter":"io.confluent.connect.avro.AvroConverter",
-        "value.converter":"io.confluent.connect.avro.AvroConverter",
-        "key.converter.schema.registry.url":"http://localhost:3306",
-        "value.converter.schema.registry.url":"http://localhost:3306",
-
-        "transforms":"createKey , setSchema",
-        "transforms.createKey.type":"org.apache.kafka.connect.transforms.ValueToKey",
-        "transform.createKey.fields":"student_id",
-        "transforms.setSchema.type":"org.apache.kafka.connect.transforms,SetSchemaMetadata$Value",
-        "transforms.setSchema.schema.name":"StudentsRecords",
-
-        "connection.url":"jdbc:mysql://db4free.net:3306/kafkaconnect",
-        "connection.username":"root",
-        "connection.password":"root",
-        "dualect.name":"MySqlDatabaseDialect",
-
-        "mode":"timestamp+incrementing",
-        "timstamp.column.name":"student_id",
-        "incrementing.column.name":"student_id",
-
-        "query":"Select * from students;",
-        "table.type":"TABLE",
-        
-
-        "poll.interval.ms":"5000",
-        "batch.max.rows":"5",
-        "topic.prefix":"student-topic",
-        "db.timezone":"Asia/Kolkata"
+    "name": "student-data-jdbc-source-connector",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "key.converter": "io.confluent.connect.avro.AvroConverter",
+      "value.converter": "io.confluent.connect.avro.AvroConverter",
+      "transforms": "createKey , setSchema",
+      "transforms.createKey.type": "org.apache.kafka.connect.transforms.ValueToKey",
+      "transforms.createKey.fields": "student_id",
+      "transforms.setSchema.type": "org.apache.kafka.connect.transforms.SetSchemaMetadata$Value",
+      "transforms.setSchema.schema.name": "StudentsRecords",
+      "connection.url": "jdbc:mysql://db4free.net:3306/kafkaconnect",
+      "connection.password": "root",
+      "mode": "timestamp+incrementing",
+      "incrementing.column.name": "student_id",
+      "query": "Select * from students;",
+      "poll.interval.ms": "5000",
+      "batch.max.rows": "5",
+      "topic.prefix": "student-topic",
+      "db.timezone": "Asia/Kolkata",
+      "task.max": "1",
+      "key.converter.schema.registry.url": "http://localhost:3306",
+      "value.converter.schema.registry.url": "http://localhost:3306",
+      "transform.createKey.fields": "student_id",
+      "connection.username": "root",
+      "dualect.name": "MySqlDatabaseDialect",
+      "timstamp.column.name": "student_id",
+      "table.type": "TABLE"
     }
-}
+  }
