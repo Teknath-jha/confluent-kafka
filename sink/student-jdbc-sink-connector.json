@@ -1,10 +1,10 @@
 {
-  "name": "payment-details-jdbc-connector-v1",
+  "name": "student-jdbc-connector",
   "config": {
 
     "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
     "task.max": "1",
-    "topics": "money-transfer-data-v1",
+    "topics": "student-topic",
 
     "key.converter": "io.confluent.connect.avro.AvroConverter",
     "value.converter": "io.confluent.connect.avro.AvroConverter",
@@ -16,7 +16,7 @@
     "transforms.Flatten.delimiter": "_",
 
     "transforms.RenameFields.type": "org.apache.kafka.connect.transforms.ReplaceField$Value",
-    "transforms.RenameFields.renames": "SENDER_NAME:SENDER_NAME,RECEIVER_NAME:BENEFICIARY_NAME, SENDER_ACCT, RECEIVER_ACCT:BENEFICIARY_ACCT,AMOUNT:TRANSFERRED_AMOUNT, SENDER_BANK:SENDER_BANK, RECEIVER_BANK:BENEFICIARY_BANK, TXN_iD:TRANSACTION_ID, TXN_DATA:TRANSACTION_DATA",
+    "transforms.RenameFields.renames": "",
 
     "connection.url": "JDBC:mysql://remotemysql.com:3306/zflFjRYUAL",
     "connection.user": "root",
@@ -26,10 +26,10 @@
 
     "branch.size": "2",
 
-    "table.name.format" : "zfLFjRYUAL.payment_transfer_details",
+    "table.name.format" : "zfLFjRYUAL.student",
 
     "pk.mode" : "record_value",
-    "pk.fields" : "TRANSACTION_ID",
+    "pk.fields" : "student_id",
 
     "db.timezone": "Asia/Kolkata"    }
 
