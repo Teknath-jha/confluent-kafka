@@ -1,0 +1,232 @@
+    1  ls
+    2  cd ..
+    3  cd..
+    4  cd ..
+    5  ls
+    6  cd ..
+    7  sudo apt install openjdk-8-jdk -y
+    8  sudo add-apt-repository ppa:webupd8team/java
+    9  sudo apt update
+   10  sudo apt install openjdk-8-jdk
+   11  java --version
+   12  java -version
+   13  curl -O http://packages.confluent.io//archive/6.2/confluent
+   14  sudo apt install curl
+   15  curl -O http://packages.confluent.io//archive/6.2/confluent
+   16  pwd
+   17  ls
+   18  history
+   19  curl -O https://packages.confluent.io//archive/6.2/confluent
+   20  cp C:\Users\teknath\Downloads\confluent/  /
+   21  cp  mnt\C:\Users\teknath\Downloads\confluent/  /
+   22  cp  mnt/c/Users/teknath/Downloads/confluent\ /
+   23  cp --help
+   24  pwd
+   25  cp  mnt/c/Users/teknath/Downloads/confluent\   /
+   26  mkdir Download
+   27  ls
+   28  mkdir Download
+   29  mkdir  temp
+   30  sudo mkdir Download
+   31  ls
+   32  cd confluent
+   33  sudo cp  mnt/c/Users/teknath/Downloads/confluent\   /Download/
+   34  sudo cp  mnt/c/Users/teknath/Downloads/confluent   /Download/
+   35  cp C:\Users\teknath\Downloads\confluent /Download/
+   36  curl -O https://packages.confluent.io/archive/7.5/confluent-7.5.0.zip
+   37  sudo curl -O https://packages.confluent.io/archive/7.5/confluent-7.5.0.zip
+   38  sudo apt-get install zip unzip
+   39  ls
+   40  unzip confluent-7.5.0.zip
+   41  sudo unzip confluent-7.5.0.zip
+   42  ls
+   43  -export CONFLUENT_HOME=~/home/confluent-7.5.0
+   44  - export CONFLUENT_HOME=~/home/confluent-7.5.0
+   45  export CONFLUENT_HOME=~/home/confluent-7.5.0
+   46  echo CONFLUENT_HOME
+   47  export PATH=CONFLUENT_HOME/bin:$PATH
+   48  confluent local services start
+   49  export CONFLUENT_HOME=~home/confluent-7.5.0
+   50  export CONFLUENT_HOME=/home/confluent-7.5.0
+   51  export PATH=CONFLUENT_HOME/bin:$PATH
+   52  confluent local services start
+   53  cd ..
+   54  export CONFLUENT_HOME=/home/confluent-7.5.0
+   55  export PATH=CONFLUENT_HOME/bin:$PATH
+   56  confluent local services start
+   57  ls
+   58  cd home
+   59  ls
+   60  sudo mv /home/confluent-7.5.0 /
+   61  cd ..
+   62  ls
+   63  export CONFLUENT_HOME=/confluent-7.5.0
+   64  export PATH=CONFLUENT_HOME/bin:$PATH
+   65  confluent local services start
+   66  ls
+   67  cd confluent-7.5.0/
+   68  confluent local services start
+   69  ls
+   70  export PATH=$CONFLUENT_HOME/bin:$PATH
+   71  confluent local services start
+   72  sudo confluence stop
+   73  confluent local services stop
+   74  confluent local services start
+   75  cd.. ..
+   76  cd..
+   77  cd..
+   78  cd ..
+   79  confluent local services start
+   80  cd confluent-7.5.0/
+   81  confluent local services start
+   82  -export CONFLUENT_HOME=/confluent-7.5.0
+   83  export CONFLUENT_HOME=/confluent-7.5.0
+   84  export PATH=$CONFLUENT_HOME/bin:$PATH
+   85  confluent local services start
+   86  sudo rm -r /usr/lib/jvm/java-8-oracle
+   87  sudo apt uninstall openjdk-8-jdk
+   88  sudo apt uninstall openjdk-8-jdk
+   89  sudo apt-get autoremove openjdk-8-jre
+   90  sudo apt install openjdk-17-jdk openjdk-17-jre
+   91  confluent local services stop
+   92  sudo apt uninstall openjdk-17-jdk
+   93  sudo apt uninstall openjdk-17-jdk openjdk-17-jre
+   94  sudo apt install openjdk-8-jdk
+   95  java -version
+   96  sudo apt remove jdk-17
+   97  sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk17/bin/java"
+   98  201
+   99  How can I completely remove all traces of Java on my system?
+  100  I already know how to install it in case I need it again.
+  101  javauninstallopenjdk
+  102  Share
+  103  Improve this question
+  104  Follow
+  105  edited Apr 13, 2017 at 12:23
+  106  Community's user avatar
+  107  CommunityBot
+  108  1
+  109  asked Dec 2, 2011 at 2:18
+  110  CaldwellYSR's user avatar
+  111  CaldwellYSR
+  112  2,17733 gold badges1313 silver badges99 bronze badges
+  113  Add a comment
+  114  9 Answers
+  115  Sorted by:
+  116  Highest score (default)
+  117  413
+  118  +200
+  119  Remove all the Java related packages (Sun, Oracle, OpenJDK, IcedTea plugins, GIJ):
+  120  dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs sudo apt-get -y remove
+  121  java -version
+  122  sudo update-alternatives --remove "javaws" "/usr/lib/jvm/jdk17/bin/javaws"
+  123  sudo apt install openjdk-8-jdk
+  124  sudo find / -name control-center.properties
+  125  sudo kill 9021
+  126  clear
+  127  cd ..
+  128  java -version
+  129  curl -O https://packages.confluent.io/archive/6.2/confluent-6.2.0.zip
+  130  sudo curl -O https://packages.confluent.io/archive/6.2/confluent-6.2.0.zip
+  131  java -version
+  132  unzip confluent-6.2.0.zip
+  133  sudo unzip confluent-6.2.0.zip
+  134  confluent local services start
+  135  /confluent-6.2.0/
+  136  ls
+  137  /confluent-6.2.0
+  138  cd confluent-6
+  139  cd confluent-6.2.0/
+  140  ls
+  141  export PATH=$CONFLUENT_HOME/bin:$PATH
+  142  export CONFLUENT_HOME=/confluent-6.2.0
+  143  export PATH=$CONFLUENT_HOME/bin:$PATH
+  144  confluent local services start
+  145  java -version
+  146  confluent local services start
+  147  netstat -tuln | grep 9021
+  148  confluent local services start
+  149  export CONFLUENT_HOME=/confluent-6.2.0
+  150  export PATH=$CONFLUENT_HOME/bin:$PATH
+  151  confluent local services start
+  152  exit
+  153  cd .. ..
+  154  cd ..
+  155  cd confluent-6
+  156  cd confluent-6.2.0/
+  157  confluent local services start
+  158  export CONFLUENT_HOME=/confluent-6.2.0
+  159  export PATH=$CONFLUENT_HOME/bin:$PATH
+  160  confluent local services start
+  161  cd .
+  162  cd confluent-6.2.0/
+  163  export CONFLUENT_HOME=/confluent-6.2.0
+  164  export PATH=$CONFLUENT_HOME/bin:$PATH
+  165  confluent local services start
+  166  cd ..
+  167  export CONFLUENT_HOME=/confluent-6.2.0
+  168  export PATH=$CONFLUENT_HOME/bin:$PATH
+  169  confluent local services start
+  170  confluent local services stop
+  171  confluent local services start
+  172  confluent-hub install confluent/kafka-connect-jdbc:10.7.4
+  173  confluent-hub install confluentinc/kafka-connect-jdbc:10.7.4
+  174  sudo confluent-hub install confluentinc/kafka-connect-jdbc:10.7.4
+  175  confluent-hub install confluentinc/kafka-connect-jdbc:10.7.4
+  176  cd confluent-6.2.0/share/
+  177  sudo chown -R teknath /
+  178  confluent-hub install confluentinc/kafka-connect-jdbc:10.7.4
+  179  cd ..
+  180  confluent-hub install confluentinc/kafka-connect-jdbc:10.7.4
+  181  cd ..
+  182  export CONFLUENT_HOME=/confluent-6.2.0
+  183  export PATH=$CONFLUENT_HOME/bin:$PATH
+  184  confluent local services start
+  185  cd ..
+  186  history
+  187  export CONFLUENT_HOME=/confluent-6.2.0
+  188  export PATH=$CONFLUENT_HOME/bin:$PATH
+  189  confluent local services start
+  190  sudo apt-get install telnet
+  191  confluent local services start
+  192  cd ..
+  193  export CONFLUENT_HOME=/confluent-6.2.0
+  194  export PATH=$CONFLUENT_HOME/bin:$PATH
+  195  confluent local services start
+  196  cd ..
+  197  export CONFLUENT_HOME=/confluent-6.2.0
+  198  export PATH=$CONFLUENT_HOME/bin:$PATH
+  199  confluent local services start
+  200  confluent local services stop
+  201  confluent local services start
+  202  cd ..
+  203  ls
+  204  cd confluent-6.2.0/
+  205  ls
+  206  history
+  207  cd ..
+  208  export CONFLUENT_HOME=/confluent-6.2.0
+  209  export PATH=$CONFLUENT_HOME/bin:$PATH
+  210  confluent local services start
+  211  ls
+  212  cd confluent-6.2.0/
+  213  ;s
+  214  ls
+  215  cd bin
+  216  ls
+  217  cd confluent
+  218  cd ..
+  219  ls
+  220  ls etc
+  221  ls etc\kafka
+  222  cd ..
+  223  confluent local services control-center logs[-follow]
+  224  confluent local services control-center logs[-vv]
+  225  confluent local services control-center log [-vv]
+  226  confluent local services control-center log[-vv]
+  227  confluent local services control-center logs
+  228  confluent local services control-center logs -vv
+  229  confluent local services control-center logs
+  230  confluent local services start
+  231  clear history
+  232  history
