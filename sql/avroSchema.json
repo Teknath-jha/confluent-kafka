@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "Student",
+    "fields": [
+      {"name": "student_id", "type": ["null", "int"]},
+      {"name": "first_name", "type": ["null", "string"]},
+      {"name": "last_name", "type": ["null", "string"]},
+      {"name": "date_of_birth", "type": ["null", "string"], "logicalType": "date"},
+      {"name": "gender", "type": ["null", "string"], "enum": ["Male", "Female", "Other"]},
+      {"name": "email", "type": ["null", "string"]},
+      {"name": "phone_number", "type": ["null", "string"]},
+      {"name": "course_name", "type": ["null", "string"]},
+      {"name": "department", "type": ["null", "string"]},
+      {"name": "enrollment_year", "type": ["null", "int"]},
+      {"name": "address_line1", "type": ["null", "string"]},
+      {"name": "address_line2", "type": ["null", "string"]},
+      {"name": "city", "type": ["null", "string"]},
+      {"name": "state", "type": ["null", "string"]},
+      {"name": "zip_code", "type": ["null", "string"]},
+      {"name": "country", "type": ["null", "string"]}
+    ]
+  }
+  
