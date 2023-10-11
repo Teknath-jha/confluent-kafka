@@ -20,53 +20,12 @@ CREATE TABLE students (
 
 
 -- Inserting sample data for students
-INSERT INTO students (
-    first_name,
-    last_name,
-    date_of_birth,
-    gender,
-    email,
-    phone_number,
-    course_name,
-    department,
-    enrollment_year,
-    address_line1,
-    address_line2,
-    city,
-    state,
-    zip_code,
-    country
-) VALUES
-    ('John', 'Doe', '1995-05-15', 'Male', 'john.doe@dummy.com', '123-456-7890', 'Computer Science', 'Science', 2021, '123 Main St', 'Apt 4B', 'Anytown', 'CA', '12345', 'USA'),
-    ('Jane', 'Smith', '1998-09-20', 'Female', 'jane.smith@dummy.com', '987-654-3210', 'Biology', 'Science', 2020, '456 Oak Ave', 'Apt 2C', 'Smallville', 'NY', '56789', 'USA'),
-    ('Mike', 'Johnson', '1997-03-08', 'Male', 'mike.johnson@dummy.com', '555-123-4567', 'History', 'Humanities', 2022, '789 Elm St', NULL, 'Bigtown', 'TX', '54321', 'USA'),
-    ('Linda', 'Williams', '1996-11-25', 'Female', 'linda.w@dummy.com', '444-789-1234', 'Mathematics', 'Science', 2019, '567 Pine St', 'Apt 3D', 'Mountain City', 'CO', '67890', 'USA'),
-    ('Rajesh', 'Kumar', '1999-02-12', 'Male', 'rajesh.k@dummy.com', '987-123-4567', 'Electrical Engineering', 'Engineering', 2023, '1234 Maple Rd', 'Suite 5E', 'Techville', 'CA', '34567', 'USA'),
-    ('Priya', 'Sharma', '1998-07-05', 'Female', 'priya.s@dummy.com', '876-987-6543', 'Psychology', 'Social Sciences', 2021, '234 Birch St', NULL, 'Villageville', 'OR', '23456', 'USA'),
-    ('Amit', 'Verma', '1997-06-18', 'Male', 'amit.v@dummy.com', '789-345-6789', 'Mechanical Engineering', 'Engineering', 2020, '567 Cedar Rd', NULL, 'Hilltop', 'WA', '45678', 'USA'),
-    ('Sneha', 'Patel', '1999-04-30', 'Female', 'sneha.p@dummy.com', '555-987-1234', 'Chemistry', 'Science', 2018, '345 Redwood Ave', 'Apt 6F', 'Rivertown', 'FL', '78901', 'USA'),
-    ('Vikram', 'Singh', '1998-08-02', 'Male', 'vikram.s@dummy.com', '777-222-3333', 'Civil Engineering', 'Engineering', 2017, '789 Oakwood Rd', NULL, 'Valley City', 'NC', '12345', 'USA'),
-    ('Neha', 'Gupta', '1996-10-14', 'Female', 'neha.g@dummy.com', '888-666-9999', 'English Literature', 'Humanities', 2021, '456 Elmwood St', 'Suite 7G', 'Pleasantville', 'IL', '67890', 'USA');
+-- Insert data into the students table
+INSERT INTO students (student_id, first_name, last_name, date_of_birth, gender, email, phone_number, course_name, department, enrollment_year, address_line1, address_line2, city, state, zip_code, country)
+VALUES (1, 'John', 'Doe', TO_DATE('1990-05-15', 'YYYY-MM-DD'), 'Male', 'john.doe@email.com', '123-456-7890', 'Computer Science', 'Engineering', 2015, '123 Main St', 'Apt 45', 'Anytown', 'CA', '12345', 'USA');
 
+INSERT INTO students (student_id, first_name, last_name, date_of_birth, gender, email, phone_number, course_name, department, enrollment_year, address_line1, city, state, zip_code, country)
+VALUES (2, 'Jane', 'Smith', TO_DATE('1992-08-20', 'YYYY-MM-DD'), 'Female', 'jane.smith@email.com', '987-654-3210', 'Biology', 'Science', 2017, '456 Elm St', 'Othertown', 'TX', '54321', 'USA');
 
-
-
-
-INSERT INTO 'students' (
-    'first_name',
-    'last_name',
-    'date_of_birth',
-    'gender',
-    'email',
-    'phone_number',
-    'course_name',
-    'department',
-    'enrollment_year',
-    'address_line1',
-    'address_line2',
-    'city',
-    'state',
-    'zip_code',
-    'country'
-) VALUES
-    ('Teknath', 'Jha', '1995-05-15', 'Male', 'john.doe@dummy.com', '123-456-7890', 'Computer Science', 'Science', 2021, '123 Main St', 'Apt 4B', 'Anytown', 'CA', '12345', 'USA'),
+INSERT INTO students (student_id, first_name, last_name, date_of_birth, gender, email, phone_number, course_name, department, enrollment_year, address_line1, city, state, zip_code, country)
+VALUES (3, 'Bob', 'Johnson', TO_DATE('1991-11-03', 'YYYY-MM-DD'), 'Male', 'bob.johnson@email.com', '555-555-5555', 'History', 'Arts', 2016, '789 Oak Rd', 'Another', 'NY', '67890', 'USA');
