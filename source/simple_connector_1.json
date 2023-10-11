@@ -14,3 +14,29 @@
       "name": "mysql-source-connector-config"
     }
   }
+
+
+  {
+    "name": "jdbc-source-students",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "connection.url": "jdbc:oracle://your-oracle-host:your-oracle-port/your-database-name",
+      "connection.user": "your-username",
+      "connection.password": "your-password",
+      "table.whitelist": "students", // Name of the table
+      "mode": "timestamp+incrementing",
+      "timestamp.column.name": "last_updated", // Use a timestamp or last updated column
+      "incrementing.column.name": "student_id", // An auto-incrementing primary key
+      "topic.prefix": "oracle-students-", // Prefix for the Kafka topics
+      "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "key.converter.schemas.enable": "false",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter.schemas.enable": "false",
+      "tasks.max": "1",
+      "poll.interval.ms": "1000", // Adjust polling interval as needed
+      "batch.max.rows": "100", // Adjust batch size as needed
+      "errors.log.enable": "true",
+      "errors.log.include.messages": "true"
+    }
+  }
+  
