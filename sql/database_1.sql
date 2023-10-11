@@ -1,25 +1,22 @@
-CREATE DATABASE database_1;
-
-USE database_1;
-
 CREATE TABLE students (
-    student_id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
+    student_id NUMBER(10) PRIMARY KEY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
     date_of_birth DATE NOT NULL,
-    gender ENUM('Male', 'Female', 'Other') NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    phone_number VARCHAR(15) UNIQUE,
-    course_name VARCHAR(100) NOT NULL,
-    department VARCHAR(50) NOT NULL,
-    enrollment_year INT NOT NULL,
-    address_line1 VARCHAR(100),
-    address_line2 VARCHAR(100),
-    city VARCHAR(50),
-    state VARCHAR(50),
-    zip_code VARCHAR(10),
-    country VARCHAR(50)
+    gender VARCHAR2(10) NOT NULL,
+    email VARCHAR2(100) UNIQUE NOT NULL,
+    phone_number VARCHAR2(15) UNIQUE,
+    course_name VARCHAR2(100) NOT NULL,
+    department VARCHAR2(50) NOT NULL,
+    enrollment_year NUMBER(4) NOT NULL,
+    address_line1 VARCHAR2(100),
+    address_line2 VARCHAR2(100),
+    city VARCHAR2(50),
+    state VARCHAR2(50),
+    zip_code VARCHAR2(10),
+    country VARCHAR2(50)
 );
+
 
 
 -- Inserting sample data for students
